@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.cuberto.liquid_swipe.LiquidPager;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override

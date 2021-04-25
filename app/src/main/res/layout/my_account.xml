@@ -6,8 +6,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
         android:background="@color/mainColor"
         >
         <ImageView
@@ -38,15 +38,17 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@color/backgroundMain"
+
         >
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
             android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"
-            android:background="@color/white">
+            android:background="@color/white"
+            android:elevation="8dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -70,10 +72,11 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
                 android:layout_marginBottom="3dp"
-                android:background="@color/white">
+                android:background="@color/white"
+                >
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -93,8 +96,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
                 android:layout_marginBottom="3dp"
                 android:background="@color/white">
                 <TextView
@@ -116,8 +119,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
                 android:layout_marginBottom="3dp"
                 android:background="@color/white">
                 <TextView
@@ -139,8 +142,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
                 android:layout_marginBottom="3dp"
                 android:background="@color/white">
                 <TextView
@@ -162,8 +165,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
                 android:layout_marginBottom="3dp"
                 android:background="@color/white">
                 <TextView

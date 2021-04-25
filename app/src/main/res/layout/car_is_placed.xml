@@ -43,11 +43,12 @@
                >
                <ImageView
                    android:id="@+id/imgUser"
-                   android:layout_width="60dp"
-                   android:layout_height="60dp"
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"
                    android:src="@drawable/ic_baseline_radio_button_checked_24"
                    android:layout_marginRight="10dp"
                    android:layout_marginLeft="35dp"
+                   android:layout_centerVertical="true"
                    />
                <TextView
                    android:layout_width="wrap_content"
@@ -66,11 +67,12 @@
                >
                <ImageView
                    android:id="@+id/imgUser"
-                   android:layout_width="60dp"
-                   android:layout_height="60dp"
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"
                    android:src="@drawable/ic_baseline_location_on_24"
                    android:layout_marginRight="10dp"
                    android:layout_marginLeft="35dp"
+                   android:layout_centerVertical="true"
                    />
                <TextView
                    android:layout_width="wrap_content"
@@ -96,12 +98,12 @@
                    android:background="@color/mainColor"
                    android:textColor="@color/white"
                    android:layout_marginBottom="30dp"/>
-               <ImageView
-                   android:layout_width="50dp"
-                   android:layout_height="50dp"
-                   android:src="@drawable/ic_car_24"
-                   android:layout_marginLeft="250dp"
-                   />
+<!--               <ImageView-->
+<!--                   android:layout_width="50dp"-->
+<!--                   android:layout_height="50dp"-->
+<!--                   android:src="@drawable/ic_car_24"-->
+<!--                   android:layout_marginLeft="250dp"-->
+<!--                   />-->
            </RelativeLayout>
            <LinearLayout
                android:layout_width="match_parent"
