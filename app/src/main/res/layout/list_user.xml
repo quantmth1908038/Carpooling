@@ -5,17 +5,20 @@
     android:orientation="vertical">
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:text="List User"
         android:textSize="30dp"
         android:gravity="center"
-        android:id="@+id/tvlist"/>
+        android:id="@+id/tvlist"
+        android:background="#9C27B0"
+        android:textColor="@color/white"/>
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:layout_below="@+id/tvlist"
+        android:layout_marginTop="20dp"
         >
         <ImageView
             android:layout_width="50dp"
@@ -31,7 +34,6 @@
             android:layout_marginLeft="20dp"
             android:paddingTop="5dp"/>
     </RelativeLayout>
-
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -45,9 +47,4 @@
             android:layout_height="wrap_content"
             android:src="@drawable/ic_baseline_person_add_alt_1_24"/>
     </RelativeLayout>
-
-
-
-
-
 </RelativeLayout>
