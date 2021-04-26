@@ -7,14 +7,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+
+        >
         <RelativeLayout
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:layout_marginBottom="3dp"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:background="@color/white">
+            android:background="@color/teal_200">
             <ImageView
                 android:id="@+id/icNoti"
                 android:layout_width="60dp"
@@ -31,6 +33,7 @@
                 android:textStyle="bold"
                 android:layout_marginTop="28dp"
                 android:textSize="20dp"
+                android:textColor="@color/white"
                 />
 
             <TextView
@@ -41,7 +44,8 @@
                 android:layout_toRightOf="@+id/icNoti"
                 android:text="sddasdadsadsa"
                 android:textStyle="bold"
-                android:textSize="20dp"/>
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
         </RelativeLayout>
     </LinearLayout>
 <!--    <LinearLayout-->
@@ -208,7 +212,8 @@
                     android:layout_height="wrap_content"
                     android:text="List User"
                     android:gravity="center"
-                    android:textColor="@color/black"/>
+                    android:textColor="@color/white"
+                    />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -235,9 +240,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Ghep xe"
+                    android:text="Car transplantation"
                     android:gravity="center"
-                    android:textColor="@color/black"/>
+                    android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -273,7 +278,7 @@
                     android:layout_height="wrap_content"
                     android:text="History"
                     android:gravity="center"
-                    android:textColor="@color/black"/>
+                    android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -302,7 +307,7 @@
                     android:layout_height="wrap_content"
                     android:text="Log out"
                     android:gravity="center"
-                    android:textColor="@color/black"/>
+                    android:textColor="@color/white"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
