@@ -30,41 +30,10 @@
         android:layout_height="match_parent"
         android:background="@color/backgroundMain"
         android:orientation="vertical">
-        <RelativeLayout
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:layout_marginBottom="3dp"
+        <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@color/white">
-            <ImageView
-                android:id="@+id/icNoti"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/avatar"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="15dp"/>
-            <TextView
-                android:id="@+id/nameNoti"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="System"
-                android:layout_toRightOf="@+id/icNoti"
-                android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:textSize="15dp"
-                android:layout_marginBottom="10dp"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="26dp"
-                android:layout_below="@+id/nameNoti"
-                android:layout_marginTop="-6dp"
-                android:layout_toRightOf="@+id/icNoti"
-                android:text="Your Booking #1234 has been success..."
-                android:textSize="13dp"/>
-        </RelativeLayout>
+            android:layout_height="wrap_content"
+            android:id="@+id/rvNotifi"/>
 
 
     </LinearLayout>
