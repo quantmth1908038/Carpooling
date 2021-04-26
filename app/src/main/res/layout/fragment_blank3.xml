@@ -3,9 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.BlankFragment3"
+    android:id="@+id/slide3"
     android:orientation="vertical"
-    android:background="#538FD8"
     >
 
     <RelativeLayout
@@ -29,7 +28,6 @@
         android:textSize="30dp"
         android:gravity="center"
         android:textStyle="bold"
-        android:textColor="@color/white"
         />
     <TextView
         android:layout_width="wrap_content"
@@ -41,7 +39,6 @@
         android:gravity="center"
         android:layout_marginBottom="50dp"
         android:layout_marginTop="30dp"
-        android:textColor="@color/white"
         />
 
     <RelativeLayout
@@ -55,8 +52,8 @@
             android:gravity="center"
             android:textStyle="bold"
             android:textSize="20dp"
-            android:textColor="#538FD8"
-            android:background="@color/white"
+            android:textColor="@color/white"
+            android:background="@drawable/border_radius_blue_background"
             android:padding="15dp"/>
     </RelativeLayout>
 
