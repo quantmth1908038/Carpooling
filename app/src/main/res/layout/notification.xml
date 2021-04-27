@@ -4,38 +4,59 @@
     android:layout_height="match_parent">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:background="@color/mainColor"
-        >
+        android:layout_height="wrap_content"
+        android:background="#3F3F3F"
+        android:padding="20dp">
         <ImageView
-            android:layout_marginTop="15dp"
+            android:id="@+id/icBack"
             android:layout_width="20dp"
             android:layout_height="20dp"
+            android:layout_marginBottom="10dp"
             android:src="@drawable/ic_back_24"
-            />
+            android:layout_centerVertical="true"/>
+
         <TextView
-            android:id="@+id/titleAccout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Notifications"
-            android:textSize="25dp"
+            android:text="Notification"
+            android:textStyle="bold"
+            android:textSize="23dp"
             android:layout_centerVertical="true"
-            android:textColor="@color/white"
-            android:textStyle="bold"/>
+            android:textColor="@color/yellowColor"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/icBack"/>
     </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/backgroundMain"
         android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mới nhất"
+                android:layout_marginLeft="20dp"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:background="@drawable/radius"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đã xem"
+                android:layout_marginLeft="20dp"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:background="@drawable/radius"/>
+        </LinearLayout>
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/rvNotifi"/>
-
-
     </LinearLayout>
 
 
