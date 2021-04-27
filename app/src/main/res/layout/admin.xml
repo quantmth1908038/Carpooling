@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+        <RelativeLayout
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/teal_200">
+            <ImageView
+                android:id="@+id/icNoti"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/avatar"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"/>
+            <TextView
+                android:id="@+id/nameNoti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin"
+                android:layout_toRightOf="@+id/icNoti"
+                android:textStyle="bold"
+                android:layout_marginTop="28dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_below="@+id/nameNoti"
+                android:layout_marginTop="-6dp"
+                android:layout_toRightOf="@+id/icNoti"
+                android:text="sddasdadsadsa"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+    </LinearLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:weightSum="5"-->
+<!--        android:layout_marginRight="15dp"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        android:layout_marginTop="15dp"-->
+
+<!--        >-->
+<!--        <ImageView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:src="@drawable/ic_baseline_people_alt_24"-->
+<!--            android:layout_weight="1"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="List User"-->
+<!--            android:textSize="30dp"-->
+<!--            android:paddingLeft="20dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:paddingTop="7dp"-->
+<!--            android:layout_weight="3"/>-->
+<!--        <ImageView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_marginTop="15dp"/>-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:weightSum="5"-->
+<!--        android:layout_marginRight="15dp"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        >-->
+<!--        <ImageView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:src="@drawable/ic_baseline_directions_car_24"-->
+<!--            android:layout_weight="1"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Ghep xe"-->
+<!--            android:textSize="30dp"-->
+<!--            android:paddingLeft="20dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:paddingTop="7dp"-->
+<!--            android:layout_weight="3"/>-->
+<!--        <ImageView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_marginTop="15dp"/>-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:weightSum="5"-->
+<!--        android:layout_marginRight="15dp"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        >-->
+<!--        <ImageView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:src="@drawable/ic_baseline_history_24"-->
+<!--            android:layout_weight="1"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="History"-->
+<!--            android:textSize="30dp"-->
+<!--            android:paddingLeft="20dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:paddingTop="7dp"-->
+<!--            android:layout_weight="3"/>-->
+<!--        <ImageView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_marginTop="15dp"/>-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:weightSum="5"-->
+<!--        android:layout_marginRight="15dp"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        >-->
+<!--        <ImageView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:src="@drawable/ic_baseline_login_24"-->
+<!--            android:layout_weight="1"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Log Out"-->
+<!--            android:textSize="30dp"-->
+<!--            android:paddingLeft="20dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:paddingTop="7dp"-->
+<!--            android:layout_weight="3"/>-->
+<!--        <ImageView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_marginTop="15dp"/>-->
+
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_people_alt_24"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="List User"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Danh sanh nguoi dung cua ban se duoc hien thi o day"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_baseline_directions_car_24"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Car transplantation"
+                    android:gravity="center"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Danh sanh nguoi dung cua ban se duoc hien thi o day"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_history_24"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="History"
+                    android:gravity="center"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Danh sanh nguoi dung cua ban se duoc hien thi o day"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_login_24"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Log out"
+                    android:gravity="center"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Danh sanh nguoi dung cua ban se duoc hien thi o day"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
