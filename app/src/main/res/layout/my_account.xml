@@ -5,55 +5,84 @@
     >
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
+        android:layout_height="200dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
         android:background="@color/mainColor"
         >
         <ImageView
-            android:layout_marginTop="15dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:src="@drawable/ic_back_24"
-            />
-        <TextView
-            android:id="@+id/titleAccout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="My Account"
-            android:textSize="30dp"
-            android:layout_centerVertical="true"
-            android:textColor="@color/white"
-            android:textStyle="bold"/>
+            android:layout_marginTop="20dp"/>
+
+
         <ImageView
+            android:id="@+id/imgAvatar"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:src="@drawable/avatar"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/tName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:text="Vương Ngọc Khánh"
+            android:layout_below="@+id/imgAvatar"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/yellowColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+84: 362075682"
+            android:layout_below="@+id/tName"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"
             />
+
+
     </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@color/backgroundMain"
+
         >
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
             android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"
-            android:background="@color/white">
+            android:background="@color/white"
+            >
+            <ImageView
+                android:id="@+id/icProfile"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_baseline_update_24" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Level"
+                android:text="Update information"
                 android:layout_centerVertical="true"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:textColor="#333"
+                android:layout_toRightOf="@+id/icProfile"
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -70,40 +99,25 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
                 android:layout_marginBottom="3dp"
                 android:background="@color/white">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Name"
+                <ImageView
+                    android:id="@+id/icMail"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:layout_centerVertical="true"
-                    android:textSize="20dp"
-                    android:textColor="#333"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Gold Member"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentRight="true"
-                    />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:layout_marginBottom="3dp"
-                android:background="@color/white">
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_baseline_mail_24" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Email"
                     android:layout_centerVertical="true"
-                    android:textSize="20dp"
+                    android:textSize="15dp"
                     android:textColor="#333"
+                    android:layout_toRightOf="@+id/icMail"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -116,17 +130,25 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
                 android:layout_marginBottom="3dp"
                 android:background="@color/white">
+                <ImageView
+                    android:id="@+id/icGender"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_baseline_contact_page_24" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Gender"
                     android:layout_centerVertical="true"
-                    android:textSize="20dp"
+                    android:textSize="15dp"
                     android:textColor="#333"
+                    android:layout_toRightOf="@+id/icGender"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -139,17 +161,25 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
                 android:layout_marginBottom="3dp"
                 android:background="@color/white">
+                <ImageView
+                    android:id="@+id/icCalendar"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_baseline_calendar_today_24"
+                    android:layout_marginRight="5dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Birthday"
                     android:layout_centerVertical="true"
-                    android:textSize="20dp"
+                    android:textSize="15dp"
                     android:textColor="#333"
+                    android:layout_toRightOf="@+id/icCalendar"
                     />
                 <TextView
                     android:layout_width="wrap_content"
@@ -159,28 +189,38 @@
                     android:layout_alignParentRight="true"
                     />
             </RelativeLayout>
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
                 android:layout_marginBottom="3dp"
-                android:background="@color/white">
+                android:background="@color/white"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <ImageView
+                    android:id="@+id/icSetting"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_baseline_settings_24" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Level"
                     android:layout_centerVertical="true"
-                    android:textSize="20dp"
+                    android:layout_toRightOf="@+id/icSetting"
+                    android:text="Setting"
                     android:textColor="#333"
-                    />
+                    android:textSize="15dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Gold Member"
-                    android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
-                    />
+                    android:layout_centerVertical="true"
+                    android:text="Gold Member" />
             </RelativeLayout>
 
 

@@ -4,216 +4,59 @@
     android:layout_height="match_parent">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:background="@color/mainColor"
-        >
+        android:layout_height="wrap_content"
+        android:background="#3F3F3F"
+        android:padding="20dp">
         <ImageView
-            android:layout_marginTop="15dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/icBack"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="10dp"
             android:src="@drawable/ic_back_24"
-            />
+            android:layout_centerVertical="true"/>
+
         <TextView
-            android:id="@+id/titleAccout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Notifications"
-            android:textSize="30dp"
+            android:text="Notification"
+            android:textStyle="bold"
+            android:textSize="23dp"
             android:layout_centerVertical="true"
-            android:textColor="@color/white"
-            android:textStyle="bold"/>
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/avatar"
-            android:layout_centerVertical="true"
-            android:layout_alignParentRight="true"
-            />
+            android:textColor="@color/yellowColor"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/icBack"/>
     </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/backgroundMain"
         android:orientation="vertical">
-        <RelativeLayout
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:layout_marginBottom="3dp"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@color/white">
-            <ImageView
-                android:id="@+id/icNoti"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/avatar"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="30dp"/>
-            <TextView
-                android:id="@+id/nameNoti"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="System"
-                android:layout_toRightOf="@+id/icNoti"
-                android:textStyle="bold"
-                android:layout_marginTop="28dp"
-                android:textSize="20dp"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="26dp"
-                android:layout_below="@+id/nameNoti"
-                android:layout_marginTop="-6dp"
-                android:layout_toRightOf="@+id/icNoti"
-                android:text="Your Booking #1234 has been success..."
-                android:textStyle="bold"
-                android:textSize="20dp"/>
-        </RelativeLayout>
-        <RelativeLayout
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:layout_marginBottom="3dp"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@color/white">
-            <ImageView
-                android:id="@+id/icNoti"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/avatar"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="30dp"/>
-            <TextView
-                android:id="@+id/nameNoti"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="System"
-                android:layout_toRightOf="@+id/icNoti"
-                android:textStyle="bold"
-                android:layout_marginTop="28dp"
-                android:textSize="20dp"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="26dp"
-                android:layout_below="@+id/nameNoti"
-                android:layout_marginTop="-6dp"
-                android:layout_toRightOf="@+id/icNoti"
-                android:text="Your Booking #1234 has been success..."
-                android:textStyle="bold"
-                android:textSize="20dp"/>
-        </RelativeLayout>
-        <RelativeLayout
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:layout_marginBottom="3dp"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="@color/white">
-        <ImageView
-            android:id="@+id/icNoti"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/avatar"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="30dp"/>
-        <TextView
-            android:id="@+id/nameNoti"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="System"
-            android:layout_toRightOf="@+id/icNoti"
-            android:textStyle="bold"
-            android:layout_marginTop="28dp"
-            android:textSize="20dp"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="26dp"
-            android:layout_below="@+id/nameNoti"
-            android:layout_marginTop="-6dp"
-            android:layout_toRightOf="@+id/icNoti"
-            android:text="Your Booking #1234 has been success..."
-            android:textStyle="bold"
-            android:textSize="20dp"/>
-    </RelativeLayout>
-        <RelativeLayout
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:layout_marginBottom="3dp"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@color/white">
-            <ImageView
-                android:id="@+id/icNoti"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/avatar"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="30dp"/>
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
             <TextView
-                android:id="@+id/nameNoti"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="System"
-                android:layout_toRightOf="@+id/icNoti"
-                android:textStyle="bold"
-                android:layout_marginTop="28dp"
-                android:textSize="20dp"
-                />
-
+                android:text="Mới nhất"
+                android:layout_marginLeft="20dp"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:background="@drawable/radius"/>
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="26dp"
-                android:layout_below="@+id/nameNoti"
-                android:layout_marginTop="-6dp"
-                android:layout_toRightOf="@+id/icNoti"
-                android:text="Your Booking #1234 has been success..."
-                android:textStyle="bold"
-                android:textSize="20dp"/>
-        </RelativeLayout>
-        <RelativeLayout
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:layout_marginBottom="3dp"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@color/white">
-            <ImageView
-                android:id="@+id/icNoti"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/avatar"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="30dp"/>
-            <TextView
-                android:id="@+id/nameNoti"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="System"
-                android:layout_toRightOf="@+id/icNoti"
-                android:textStyle="bold"
-                android:layout_marginTop="28dp"
-                android:textSize="20dp"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="26dp"
-                android:layout_below="@+id/nameNoti"
-                android:layout_marginTop="-6dp"
-                android:layout_toRightOf="@+id/icNoti"
-                android:text="Your Booking #1234 has been success..."
-                android:textStyle="bold"
-                android:textSize="20dp"/>
-        </RelativeLayout>
-
-
+                android:text="Đã xem"
+                android:layout_marginLeft="20dp"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:background="@drawable/radius"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvNotifi"/>
     </LinearLayout>
 
 
