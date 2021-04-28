@@ -409,7 +409,7 @@
         android:layout_height="wrap_content"
         android:text="Confirm"
         android:layout_gravity="center"
-        android:background=""/>
+        />
 
 
 

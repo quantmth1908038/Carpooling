@@ -1,22 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    android:id="@+id/slide1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200">
-    <ImageView
-        android:layout_width="wrap_content"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/ivCofirmYourDriver"
-        android:src="@drawable/requestride"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginBottom="30dp">
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/ivRequestRide"
+            android:src="@drawable/step2"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
     <TextView
+        android:id="@+id/tvNTMY"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tvNTMY"
+        android:layout_gravity="center"
         android:text="Hi, nice to meet you"
         android:textSize="40dp"
-        android:layout_gravity="center"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,12 +37,16 @@
         android:gravity="center"
         android:layout_marginTop="30dp"
         />
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Use current location"
         android:layout_marginTop="30dp"
+        android:background="@drawable/border_radius_blue_background"
+        android:textColor="@color/white"
+        android:padding="15dp"
+        android:textSize="16dp"
         />
 
 

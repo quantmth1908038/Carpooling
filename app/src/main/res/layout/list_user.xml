@@ -3,37 +3,206 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="List User"
-        android:textSize="30dp"
-        android:gravity="center"
-        android:id="@+id/tvlist"
-        android:background="#9C27B0"
-        android:textColor="@color/white"/>
+
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/tvlist"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
+        android:padding="25dp"
+        android:background="@color/mainColor">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin List"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/icBack"
+            android:textColor="@color/yellowColor"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/tvlist"
         android:layout_marginTop="20dp"
+        android:orientation="vertical"
         >
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/avatar"
-            android:id="@+id/ivAvatar"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/ivAvatar"
-            android:textSize="30dp"
-            android:text="Nguyen Van Anh"
-            android:layout_marginLeft="20dp"
-            android:paddingTop="5dp"/>
-    </RelativeLayout>
+        <RelativeLayout
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/white">
+            <ImageView
+                android:id="@+id/icNoti"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/avatar"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"/>
+            <TextView
+                android:id="@+id/nameNoti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vương Ngọc Khánh"
+                android:layout_toRightOf="@+id/icNoti"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_below="@+id/nameNoti"
+                android:layout_marginTop="-6dp"
+                android:layout_toRightOf="@+id/icNoti"
+                android:text="Your Booking #1234 has been success..."
+                android:textSize="13dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/white">
+            <ImageView
+                android:id="@+id/icNoti"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/avatar"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"/>
+            <TextView
+                android:id="@+id/nameNoti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nguyễn Vương Anh"
+                android:layout_toRightOf="@+id/icNoti"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_below="@+id/nameNoti"
+                android:layout_marginTop="-6dp"
+                android:layout_toRightOf="@+id/icNoti"
+                android:text="Your Booking #1234 has been success..."
+                android:textSize="13dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/white">
+            <ImageView
+                android:id="@+id/icNoti"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/avatar"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"/>
+            <TextView
+                android:id="@+id/nameNoti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trương Minh Quan"
+                android:layout_toRightOf="@+id/icNoti"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_below="@+id/nameNoti"
+                android:layout_marginTop="-6dp"
+                android:layout_toRightOf="@+id/icNoti"
+                android:text="Your Booking #1234 has been success..."
+                android:textSize="13dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/white">
+            <ImageView
+                android:id="@+id/icNoti"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/avatar"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"/>
+            <TextView
+                android:id="@+id/nameNoti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nguyễn Hoàng Linh"
+                android:layout_toRightOf="@+id/icNoti"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_below="@+id/nameNoti"
+                android:layout_marginTop="-6dp"
+                android:layout_toRightOf="@+id/icNoti"
+                android:text="Your Booking #1234 has been success..."
+                android:textSize="13dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/white">
+            <ImageView
+                android:id="@+id/icNoti"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/avatar"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"/>
+            <TextView
+                android:id="@+id/nameNoti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đoàn Duy Trung Lương"
+                android:layout_toRightOf="@+id/icNoti"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_below="@+id/nameNoti"
+                android:layout_marginTop="-6dp"
+                android:layout_toRightOf="@+id/icNoti"
+                android:text="Your Booking #1234 has been success..."
+                android:textSize="13dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -41,10 +210,12 @@
         android:layout_alignParentRight="true"
         android:layout_marginBottom="50dp"
         android:layout_marginRight="20dp"
+        android:background="@drawable/radius_50"
+        android:padding="15dp"
         >
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_person_add_alt_1_24"/>
+            android:src="@drawable/ic_yellow_person_add_24"/>
     </RelativeLayout>
 </RelativeLayout>

@@ -1,18 +1,363 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:background="@drawable/background_admin">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:background="@color/mainColor"
+            android:padding="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/icNoti"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/avatar" />
+
+            <TextView
+                android:id="@+id/nameNoti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/icNoti"
+                android:text="Vương Ngọc Khánh"
+                android:textColor="@color/yellowColor"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_below="@+id/nameNoti"
+                android:layout_marginTop="-6dp"
+                android:layout_toRightOf="@+id/icNoti"
+                android:text="+84: 362075682"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/slide1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:elevation="8dp"
+                android:padding="10dp"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_group_add_24"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manager Admin"
+                    android:gravity="center"
+                    android:textColor="@color/yellowColor"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Danh sanh nguoi dung cua ban se duoc hien thi o day"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:elevation="8dp"
+                android:padding="10dp"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_directions_car_24"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Manager Car"
+                    android:gravity="center"
+                    android:textColor="@color/yellowColor"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Danh sanh nguoi dung cua ban se duoc hien thi o day"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/slide1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:elevation="8dp"
+                android:padding="10dp"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_history_24"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="History"
+                    android:gravity="center"
+                    android:textColor="@color/yellowColor"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Danh sanh nguoi dung cua ban se duoc hien thi o day"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:elevation="8dp"
+                android:padding="10dp"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_logout_24"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Log out"
+                    android:gravity="center"
+                    android:textColor="@color/yellowColor"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Danh sanh nguoi dung cua ban se duoc hien thi o day"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mainColor"
+            android:paddingTop="0.5dp"
+            android:layout_alignParentBottom="true"
+
+            >
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:menu="@menu/bottom_app_bar"
+                app:backgroundTint="@color/white"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:paddingTop="5dp"-->
+<!--            android:paddingBottom="5dp"-->
+<!--            android:background="@color/mainColor"-->
+<!--            android:paddingLeft="20dp"-->
+<!--            android:paddingRight="20dp"-->
+
+<!--            >-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/img1"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:src="@drawable/avatar" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_toRightOf="@+id/img1"-->
+<!--                android:text="Gregory Smith"-->
+<!--                android:textSize="20dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/yellowColor"/>-->
+<!--        </RelativeLayout>-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingLeft="30dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="@color/white">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imgUser"-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:src="@drawable/ic_baseline_location_on_24" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_toRightOf="@+id/imgUser"-->
+<!--                android:gravity="right"-->
+<!--                android:text="Lê Lợi,Kiến Xương,Thái Bình"-->
+<!--                android:textSize="15dp"-->
+<!--                />-->
+<!--        </RelativeLayout>-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:paddingLeft="30dp"-->
+<!--            android:background="@color/white"-->
+<!--            android:layout_marginTop="10dp">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imgUser"-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:src="@drawable/ic_baseline_radio_button_checked_24"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_toRightOf="@+id/imgUser"-->
+<!--                android:gravity="right"-->
+<!--                android:text="Lê Lợi,Kiến Xương,Thái Bình"-->
+<!--                android:textSize="15dp"-->
+<!--                />-->
+<!--        </RelativeLayout>-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Thời gian"-->
+<!--                android:paddingLeft="20dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_marginBottom="5dp"/>-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                android:paddingLeft="20dp"-->
+<!--                android:background="@color/white"-->
+<!--                android:id="@+id/time">-->
+
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imgUser1"-->
+<!--                    android:layout_width="20dp"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:src="@drawable/ic_baseline_calendar_today_24" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tvDate"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_toRightOf="@+id/imgUser1"-->
+<!--                    android:text="Haf Nội,27 tahngs 4,năm 2021"-->
+<!--                    android:textSize="15dp"-->
+<!--                    />-->
+<!--            </RelativeLayout>-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_below="@+id/time"/>-->
+<!--        </RelativeLayout>-->
+
+<!--    </LinearLayout>-->
+</LinearLayout>
